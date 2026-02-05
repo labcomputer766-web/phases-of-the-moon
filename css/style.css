@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+}
+nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+.phases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+.phase {
+    text-align: center;
+    border: 1px solid #555;
+    padding: 1rem;
+    border-radius: 8px;
+}
+.phase img {
+    width: 100px;
+    height: 100px;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+}
+#current-phase {
+    text-align: center;
+}
+#phase-display img {
+    width: 200px;
+    height: 200px;
+}
+.quiz .question {
+    margin-bottom: 1rem;
+}
+@media (max-width: 600px) {
+    .phases-grid {
+        grid-template-columns: 1fr;
+    }
+}

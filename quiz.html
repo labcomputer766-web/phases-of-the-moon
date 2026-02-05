@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Phases Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Moon Phases Explorer</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="phases.html">Phases</a>
+            <a href="calculator.html">Calculator</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="related.html">Related</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Moon Phases Quiz</h2>
+        <div id="quiz">
+            <div class="question">
+                <p>1. What is the phase when the moon is fully illuminated?</p>
+                <input type="radio" name="q1" value="Full Moon"> Full Moon<br>
+                <input type="radio" name="q1" value="New Moon"> New Moon<br>
+            </div>
+            <div class="question">
+                <p>2. How many moon phases are there?</p>
+                <input type="radio" name="q2" value="8"> 8<br>
+                <input type="radio" name="q2" value="4"> 4<br>
+            </div>
+            <div class="question">
+                <p>3. Which phase comes after Waxing Gibbous?</p>
+                <input type="radio" name="q3" value="Full Moon"> Full Moon<br>
+                <input type="radio" name="q3" value="New Moon"> New Moon<br>
+            </div>
+            <button onclick="submitQuiz()">Submit</button>
+        </div>
+        <div id="score" style="display:none;">
+            <p>Your score: <span id="score-value"></span>/3</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Moon Phases Explorer</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
